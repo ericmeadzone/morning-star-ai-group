@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Morning Star AI Group</title>
+<title>Bearing | Morning Star AI Group</title>
+<meta name="description" content="Bearing is the field-intelligence platform built to keep every homeowner informed, every risk flagged early, and every scope change documented.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -47,9 +48,10 @@
   nav.wrap{ display:flex; align-items:center; justify-content:space-between; height:76px; }
   .logo{ font-family:var(--serif); font-weight:500; font-size:1.15rem; letter-spacing:0.01em; display:flex; align-items:center; gap:10px; }
   .logo .mark{ width:8px; height:8px; border-radius:50%; background:var(--gold); box-shadow:0 0 12px 3px rgba(201,169,106,0.55); }
-  .nav-links{ display:flex; gap:36px; align-items:center; }
+  .nav-links{ display:flex; gap:30px; align-items:center; }
   .nav-links a{ font-size:0.88rem; color:var(--muted); font-weight:500; transition:color 0.2s ease; }
   .nav-links a:hover{ color:var(--text); }
+  .nav-links a.current{ color:var(--gold); }
   .btn{ display:inline-block; font-family:var(--sans); font-weight:600; font-size:0.85rem; padding:12px 24px; border-radius:2px; border:1px solid var(--gold); color:var(--bg-deep); background:var(--gold); transition:all 0.25s ease; cursor:pointer; letter-spacing:0.01em; }
   .btn:hover{ background:transparent; color:var(--gold); }
   .btn-ghost{ background:transparent; color:var(--text); border:1px solid var(--line); }
@@ -75,7 +77,6 @@
   .trust-names{ display:flex; flex-wrap:wrap; gap:36px; align-items:baseline; }
   .trust-names span{ font-family:var(--serif); font-size:1.2rem; color:var(--text); opacity:0.7; }
 
-  /* origin timeline */
   .origin{ background:var(--bg-panel); }
   .timeline{ margin-top:60px; display:flex; flex-direction:column; }
   .tl-row{ display:grid; grid-template-columns:130px 1fr; gap:36px; padding:40px 0; border-top:1px solid var(--line); }
@@ -85,37 +86,23 @@
   .tl-row p{ color:var(--muted); font-size:1rem; max-width:640px; }
   @media (max-width: 760px){ .tl-row{ grid-template-columns:1fr; gap:10px; } }
 
-  /* philosophy quote */
   .quote-block{ text-align:center; padding:0; }
   .quote-mark{ font-family:var(--serif); font-size:4rem; color:var(--gold); opacity:0.5; line-height:1; margin-bottom:8px; }
   blockquote{ font-family:var(--serif); font-style:italic; font-size:clamp(1.4rem, 2.6vw, 2rem); line-height:1.4; color:var(--text); max-width:820px; margin:0 auto; }
   .quote-attr{ margin-top:28px; font-family:var(--mono); font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
 
-  /* today */
-  .today-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1px; margin-top:56px; background:var(--line); border:1px solid var(--line); }
-  .today-card{ background:var(--bg-deep); padding:40px 36px; display:flex; flex-direction:column; gap:12px; }
-  .today-card h3{ font-family:var(--serif); font-size:1.3rem; font-weight:400; }
-  .today-card p{ color:var(--muted); font-size:0.95rem; }
-  @media (max-width: 860px){ .today-grid{ grid-template-columns:1fr; } }
-
-  /* personal note */
-  .personal{ background:var(--bg-panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .personal-inner{ max-width:720px; }
-  .personal p{ color:var(--muted); font-size:1.05rem; margin-bottom:20px; }
-  .personal p:last-of-type{ margin-bottom:0; }
-  .signature{ margin-top:36px; font-family:var(--serif); font-style:italic; font-size:1.3rem; color:var(--gold); }
-  .sig-title{ font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; margin-top:6px; }
-
   .cta-final{ background:linear-gradient(180deg, var(--bg-panel) 0%, var(--bg-panel-2) 100%); text-align:center; padding:130px 0; }
   .cta-final h2{ max-width:100%; margin:0 auto; }
   .cta-final .lede{ margin-left:auto; margin-right:auto; }
   .cta-final .hero-cta{ justify-content:center; }
+  .login-note{ margin-top:24px; font-size:0.85rem; color:var(--muted); }
+  .login-note a{ color:var(--gold); }
 
   footer{ border-top:1px solid var(--line); padding:56px 0; position:relative; z-index:1; }
   .footer-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px; }
   .footer-brand{ font-family:var(--serif); font-size:1.1rem; }
   .footer-tag{ color:var(--muted); font-size:0.85rem; margin-top:6px; }
-  .footer-links{ display:flex; gap:28px; }
+  .footer-links{ display:flex; gap:28px; flex-wrap:wrap; }
   .footer-links a{ color:var(--muted); font-size:0.85rem; }
   .footer-links a:hover{ color:var(--gold); }
 
@@ -125,7 +112,6 @@
   }
   .footer-legal a{ color:var(--muted); font-size:0.78rem; }
   .footer-legal a:hover{ color:var(--gold); }
-
 
   .reveal{ opacity:0; transform:translateY(18px); transition:opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
@@ -143,7 +129,7 @@
     <div class="nav-links">
       <a href="/about.html">About</a>
       <a href="/cadence.html">Cadence</a>
-      <a href="/bearing.html">Bearing</a>
+      <a href="/bearing.html" class="current">Bearing</a>
       <a href="/subscription.html">Pricing</a>
     </div>
     <a href="/#contact" class="btn">Book a Strategy Call</a>
@@ -154,55 +140,66 @@
 
   <section class="hero">
     <div class="wrap reveal">
-      <div class="kicker">Our Story</div>
-      <h1>We didn't set out to build software. We set out to stop <em>forgetting</em> people.</h1>
-      <p class="lede">Morning Star AI Group started as one advisor's answer to a problem no one else was solving — not as a pitch deck, not as a startup idea, but as a tool built out of necessity, tested on real clients, before it was ever meant to be sold to anyone.</p>
+      <div class="kicker">For General Contractors, Custom Builders &amp; Remodelers</div>
+      <h1>The field-intelligence platform built to keep every homeowner <em>informed</em> — before small gaps become big ones.</h1>
+      <p class="lede">Bearing keeps every risk flagged early, every scope change documented, and every homeowner in the loop — without adding paperwork to a superintendent's day.</p>
+      <div class="hero-cta">
+        <a href="/#contact" class="btn btn-lg">Request a Demo</a>
+        <a href="/subscription.html" class="btn btn-ghost btn-lg">See Pricing</a>
+      </div>
     </div>
   </section>
 
   <div class="trust-bar">
     <div class="wrap">
-      <div class="trust-label">Twenty years in enterprise technology leadership at</div>
+      <div class="trust-label">Running on active jobsites · Powered by the Morning Star Intelligence Fabric</div>
       <div class="trust-names">
-        <span>Microsoft</span>
-        <span>Cisco</span>
-        <span>Splunk</span>
-        <span>Accenture</span>
+        <span>Quick Log</span>
+        <span>Client Trust Center</span>
+        <span>Predictive Risk Engine</span>
+        <span>RFIs &amp; Change Orders</span>
       </div>
     </div>
   </div>
 
   <section class="origin section">
     <div class="wrap reveal">
-      <div class="kicker">How We Got Here</div>
-      <h2>The short version: a technologist became an advisor, and couldn't unsee what technology was doing to trust.</h2>
+      <div class="kicker">What's Inside</div>
+      <h2>Everything a jobsite needs tracked, without adding a second job.</h2>
       <div class="timeline">
         <div class="tl-row">
-          <div class="tl-tag">Act One</div>
+          <div class="tl-tag">01</div>
           <div>
-            <h3>Two decades building AI inside the biggest technology companies in the world</h3>
-            <p>Before any of this, there was a career spent inside enterprise technology and AI product leadership at Microsoft, Cisco, Splunk, and Accenture — learning, from the inside, exactly how AI systems get built, and exactly how often "efficient" and "trustworthy" quietly pull in opposite directions.</p>
+            <h3>Quick Log</h3>
+            <p>Record a voice memo on-site; AI parses it into the daily log, trades, and action items — no forms, no laptop.</p>
           </div>
         </div>
         <div class="tl-row">
-          <div class="tl-tag">Act Two</div>
+          <div class="tl-tag">02</div>
           <div>
-            <h3>A second career, chosen on purpose: real estate advisor</h3>
-            <p>Becoming a licensed advisor with Engel &amp; Völkers wasn't a pivot away from technology — it was a chance to sit on the other side of it. To be the person a client trusts with the biggest financial decision of their life, and to feel, firsthand, exactly where automation helps and exactly where it quietly erodes confidence.</p>
+            <h3>Client Trust Center</h3>
+            <p>Meeting notes, homeowner sentiment, and homeowner-ready weekly updates, generated automatically.</p>
           </div>
         </div>
         <div class="tl-row">
-          <div class="tl-tag">Act Three</div>
+          <div class="tl-tag">03</div>
           <div>
-            <h3>Cadence was built to solve one advisor's problem — before it was ever a product</h3>
-            <p>Every client detail, every showing, every follow-up, held in one place instead of scattered across notebooks and memory. It wasn't designed in a boardroom. It was designed at a kitchen table, refined against real clients, because the alternative was letting people fall through the cracks.</p>
+            <h3>Predictive Jobsite Risk Engine</h3>
+            <p>Forecasts schedule cascades, inspection delays, and carrying costs before they hit the budget.</p>
           </div>
         </div>
         <div class="tl-row">
-          <div class="tl-tag">Act Four</div>
+          <div class="tl-tag">04</div>
           <div>
-            <h3>Building a home taught the same lesson from the other side of the table</h3>
-            <p>Designing and building a custom home at Tumble Creek meant living inside the builder-client relationship as the client — feeling exactly where communication breaks down, where trust gets tested, and where a homeowner is often left guessing. Bearing exists because that gap shouldn't exist.</p>
+            <h3>RFIs &amp; Homeowner-Approved Change Orders</h3>
+            <p>Tracked end to end, with homeowner approval built directly into the record.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-tag">05</div>
+          <div>
+            <h3>Role-Based Access, By Jobsite</h3>
+            <p>Superintendents, PMs, and admins each see exactly what they need — nothing more, nothing less.</p>
           </div>
         </div>
       </div>
@@ -212,49 +209,22 @@
   <section class="section">
     <div class="wrap-narrow quote-block reveal">
       <div class="quote-mark">"</div>
-      <blockquote>AI shouldn't be the thing that makes your clients feel like a number. It should be the reason they never feel like one — because nothing about their situation ever gets forgotten, dropped, or rushed.</blockquote>
-      <div class="quote-attr">— The founding thesis behind everything we build</div>
-    </div>
-  </section>
-
-  <section class="today section-tight" style="background:var(--bg-panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
-    <div class="wrap reveal">
-      <div class="kicker">Where We Are Today</div>
-      <h2>Two products, built the same way — for ourselves, first.</h2>
-      <div class="today-grid">
-        <div class="today-card">
-          <h3>Cadence</h3>
-          <p>Running daily inside a working Engel &amp; Völkers practice — client profiles, listing checklists, communication history, and buyer &amp; seller portals, all in one place.</p>
-        </div>
-        <div class="today-card">
-          <h3>Bearing</h3>
-          <p>Running on active jobsites — Quick Log, a Client Trust Center, predictive risk flagging, and RFIs and change orders tracked end to end.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="personal section">
-    <div class="wrap reveal">
-      <div class="personal-inner">
-        <div class="kicker">A Note, Directly</div>
-        <p>I didn't start Morning Star AI Group because I thought AI was going to change real estate or construction. I started it because I kept watching AI get built by people who'd never had to sit across from a client and explain why something got missed.</p>
-        <p>I've been on both sides of that table — twenty years building enterprise technology, and now years spent as the advisor a family trusts with their biggest purchase, and as the homeowner trusting someone else to build my own. Both of those experiences taught me the same thing: trust isn't a feature. It's the whole business. Any AI system that doesn't protect it isn't worth building.</p>
-        <p>That's the only standard anything here has to meet. Not "does it save time." Does it make the person on the other end feel more taken care of, not less. If you're building a client-facing business and that standard matters to you too, I'd like to talk.</p>
-        <div class="signature">Eric Mead</div>
-        <div class="sig-title">Founder, Morning Star AI Group</div>
-      </div>
+      <blockquote>Building a home taught the same lesson from the other side of the table. Bearing exists because that gap shouldn't exist.</blockquote>
+      <div class="quote-attr">— Eric Mead, Founder</div>
     </div>
   </section>
 
   <section class="cta-final">
     <div class="wrap reveal">
-      <div class="kicker" style="justify-content:center;">Let's Talk</div>
-      <h2>If this sounds like how you already think about your clients, we should talk.</h2>
-      <p class="lede">No deck, no pressure — just a conversation about where trust is being built or lost in your business today.</p>
+      <div class="kicker" style="justify-content:center;">Pricing</div>
+      <h2>Subscription, per project or per firm.</h2>
+      <p class="lede">Built for individual jobsites and rolled out across a firm's active projects — see current pricing, or talk through a pilot.</p>
       <div class="hero-cta">
-        <a href="mailto:hello@morningstaraigroup.com" class="btn btn-lg">Book a Strategy Call</a>
+        <a href="/subscription.html" class="btn btn-lg">See Pricing</a>
+        <a href="/#contact" class="btn btn-ghost btn-lg">Request a Demo</a>
       </div>
+      <div class="login-note">Already using Bearing? <a href="https://trailside-sitelog-1.onrender.com">Log in</a></div>
+      <!-- Swap the login link above to https://bearing.morningstaraigroup.com once that subdomain is live -->
     </div>
   </section>
 
