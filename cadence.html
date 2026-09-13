@@ -98,6 +98,11 @@
   .login-note{ margin-top:24px; font-size:0.85rem; color:var(--muted); }
   .login-note a{ color:var(--gold); }
 
+  .video-showcase{ text-align:center; }
+  .video-showcase .lede{ margin-left:auto; margin-right:auto; }
+  .video-frame{ position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px; border:1px solid var(--line); box-shadow:0 30px 60px -20px rgba(0,0,0,0.5); text-align:left; }
+  .video-frame iframe{ position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+
   footer{ border-top:1px solid var(--line); padding:56px 0; position:relative; z-index:1; }
   .footer-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px; }
   .footer-brand{ font-family:var(--serif); font-size:1.1rem; }
@@ -132,7 +137,7 @@
       <a href="/bearing.html">Bearing</a>
       <a href="/subscription.html">Pricing</a>
     </div>
-    <a href="/#contact" class="btn">Book a Strategy Call</a>
+    <a href="/fragmentation-score.html" class="btn">Check Fragmentation Score</a>
   </nav>
 </header>
 
@@ -161,6 +166,17 @@
       </div>
     </div>
   </div>
+
+  <section class="section-tight video-showcase">
+    <div class="wrap-narrow reveal">
+      <div class="kicker" style="justify-content:center;">See It In Action</div>
+      <h2>A real workflow, start to finish.</h2>
+      <p class="lede">Watch Cadence walk through one client's day — from an open task in the morning to what that client sees on their own end.</p>
+      <div class="video-frame" style="margin-top:40px;">
+        <iframe src="https://www.youtube.com/embed/qI-dFf2Is6M" title="Cadence Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
   <section class="origin section">
     <div class="wrap reveal">
