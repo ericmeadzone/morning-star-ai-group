@@ -785,6 +785,7 @@
 
     function ok(){
       status.textContent = 'Thanks — we’ve got it, and will be in touch shortly.';
+      if (window.msaigTrack) window.msaigTrack('inquiry_sent');
       status.classList.add('show','ok');
       form.reset();
       submitBtn.disabled = false;
@@ -809,4 +810,5 @@
 })();
 </script>
 
+<script src="/linkedin-insight.js"></script>
 </html>
