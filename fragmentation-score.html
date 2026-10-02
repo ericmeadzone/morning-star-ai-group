@@ -665,6 +665,7 @@
 
   function renderResults(){
     var score = computeScore();
+    if (window.msaigTrack) window.msaigTrack('score_completed');
     var band = bandFor(score);
 
     document.getElementById("leadFirstName").textContent = state.lead.name ? state.lead.name.split(" ")[0] + "'s business" : "your business";
@@ -797,5 +798,6 @@
 })();
 </script>
 
+<script src="/linkedin-insight.js"></script>
 </body>
 </html>
