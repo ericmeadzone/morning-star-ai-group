@@ -89,7 +89,7 @@
   <div class="wrap">
     <div class="page-kicker">Legal</div>
     <h1>Terms and Conditions &amp; Privacy Policy</h1>
-    <div class="updated">Effective Date: August 8, 2026 &middot; Last Revised: October 2, 2026</div>
+    <div class="updated">Effective Date: August 8, 2026 &middot; Last Revised: October 17, 2026</div>
 
     <div class="disclaimer">
       <strong>Note:</strong> These documents are provided by Morning Star AI Group and describe our current practices for this website and for Bearing and Cadence. If you have questions about a specific provision, contact us using the information in each document's final section.
@@ -236,7 +236,7 @@
   <li>We do not build advertising profiles, and we do not combine a Customer's client data with any other Customer's data.</li>
   <li>We do not permit our AI subprocessors to use Customer data to train their own general-purpose models outside the scope of providing the Service to us.</li>
   <li>We do not collect personal information directly from children, and Bearing and Cadence is not directed at children.</li>
-  <li>We do not use session-replay or third-party analytics tooling. The only ad-tracking technology we use is the opt-in LinkedIn Insight Tag on our marketing website, never in Cadence or Bearing (§7).</li>
+  <li>We do not use session-replay tooling. On our marketing website we use cookieless Cloudflare Web Analytics to count visits in aggregate, and the only ad-tracking technology we use is the opt-in LinkedIn Insight Tag; neither is used in Cadence or Bearing (§7).</li>
 </ul>
 <h3>3. Definitions</h3>
 <ul>
@@ -331,7 +331,7 @@
 <ul>
   <li>Data brokers or list-resale companies</li>
   <li>Advertising or ad-technology networks, except LinkedIn, and only for marketing-website visitors who opt in (§7). Customer data is never shared with any advertising network.</li>
-  <li>Analytics providers (none currently in use — see §7)</li>
+  <li>Analytics providers, except Cloudflare, which provides cookieless, aggregate visit counts for our marketing website only (§7). Customer data is never shared with an analytics provider.</li>
   <li>Social media platforms (social URLs on client profiles are staff-entered references, not data pushed to those platforms)</li>
 </ul>
 <h4>6.3 Other Disclosures</h4>
@@ -346,6 +346,7 @@
 <ul>
   <li>Strictly necessary cookies, required for core site functionality (e.g., session and security tokens). These cannot be disabled without affecting site function.</li>
   <li>The LinkedIn Insight Tag, an advertising pixel provided by LinkedIn, loads only if you turn on Targeting &amp; Advertising on our <a href="/cookie-preferences.html">Cookie Preferences</a> page. It is off by default. When active, it sets LinkedIn cookies and sends LinkedIn the page viewed, IP address, browser and device details, and visit time, so LinkedIn can measure our ad campaigns (including Fragmentation Score completions and inquiry submissions), let us show our ads on LinkedIn to past visitors, and give us aggregated, de-identified audience reports. LinkedIn does not identify individual visitors to us, and processes this information under the <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener">LinkedIn Privacy Policy</a>.</li>
+  <li>Cloudflare Web Analytics, a cookieless tool that counts page views and visits in aggregate. It sets no cookies, does not use local storage, and does not identify or track individual visitors across sites; Cloudflare processes basic request data (such as the page viewed, referring site, and browser type) under the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>.</li>
   <li>No analytics or functional cookies, and no other pixels or third-party SDKs, are active.</li>
   <li>If we change these technologies, we will update this policy and honor any preference already recorded.</li>
   <li>Cookie preferences are stored in your browser's local storage; this is a functional storage mechanism, not a tracking cookie.</li>
@@ -557,5 +558,6 @@
 </footer>
 
 <script src="/linkedin-insight.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7f2f0723a72e4a748fb44632af9f1ca4"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
