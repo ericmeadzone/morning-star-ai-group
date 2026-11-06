@@ -785,6 +785,7 @@
 
     function ok(){
       status.textContent = 'Thanks — we’ve got it, and will be in touch shortly.';
+      if (window.msaigTrack) window.msaigTrack('inquiry_sent');
       status.classList.add('show','ok');
       form.reset();
       submitBtn.disabled = false;
@@ -809,4 +810,6 @@
 })();
 </script>
 
+<script src="/linkedin-insight.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7f2f0723a72e4a748fb44632af9f1ca4"}'></script><!-- End Cloudflare Web Analytics -->
 </html>
